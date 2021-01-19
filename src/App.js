@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Cards, Chart, CountryPicker } from "./components";
+import { Cards, Chart, CountryPicker, Footer } from "./components";
 import styles from "./App.module.css";
 import { fetchData } from "./api";
 
@@ -32,6 +32,7 @@ const App = () => {
       <Cards data={data} />
       <CountryPicker handleCountryChange={handleCountryChange} />
       <Chart data={data} country={country} />
+      <Footer />
     </div>
   );
 };
